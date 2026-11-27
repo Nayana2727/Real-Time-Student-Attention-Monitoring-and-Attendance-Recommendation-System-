@@ -1,0 +1,184 @@
+{
+  "n_respondents": 106,
+  "q4a": {
+    "head_pose": {
+      "mean": 3.97,
+      "pct_rated_4_or_5": 66.0
+    },
+    "gaze": {
+      "mean": 3.92,
+      "pct_rated_4_or_5": 66.0
+    },
+    "expression": {
+      "mean": 3.71,
+      "pct_rated_4_or_5": 62.3
+    },
+    "blink": {
+      "mean": 3.47,
+      "pct_rated_4_or_5": 52.8
+    },
+    "mouth": {
+      "mean": 3.62,
+      "pct_rated_4_or_5": 59.4
+    },
+    "posture": {
+      "mean": 3.47,
+      "pct_rated_4_or_5": 52.8
+    },
+    "nodding": {
+      "mean": 3.6,
+      "pct_rated_4_or_5": 64.2
+    },
+    "phone": {
+      "mean": 3.88,
+      "pct_rated_4_or_5": 67.9
+    },
+    "duration": {
+      "mean": 3.37,
+      "pct_rated_4_or_5": 50.0
+    },
+    "frequency": {
+      "mean": 3.46,
+      "pct_rated_4_or_5": 52.8
+    }
+  },
+  "q4b": {
+    "head_pose": {
+      "count": 52,
+      "pct": 49.1
+    },
+    "gaze": {
+      "count": 42,
+      "pct": 39.6
+    },
+    "expression": {
+      "count": 45,
+      "pct": 42.5
+    },
+    "blink": {
+      "count": 31,
+      "pct": 29.2
+    },
+    "mouth": {
+      "count": 38,
+      "pct": 35.8
+    },
+    "posture": {
+      "count": 24,
+      "pct": 22.6
+    },
+    "nodding": {
+      "count": 25,
+      "pct": 23.6
+    },
+    "phone": {
+      "count": 41,
+      "pct": 38.7
+    },
+    "duration": {
+      "count": 26,
+      "pct": 24.5
+    },
+    "frequency": {
+      "count": 24,
+      "pct": 22.6
+    }
+  },
+  "q4b_meta": {
+    "exactly_3": 88,
+    "more_than_3": 14,
+    "fewer_than_3": 4
+  },
+  "q6": {
+    "median": 80.0,
+    "mean": 75.3,
+    "n": 106,
+    "counts": {
+      "50": 8,
+      "60": 9,
+      "70": 15,
+      "75": 20,
+      "80": 28,
+      "85": 18,
+      "90": 8
+    }
+  },
+  "q7a": {
+    "median": 40.0,
+    "mode": 40,
+    "n": 106,
+    "counts": {
+      "20": 13,
+      "30": 18,
+      "40": 43,
+      "50": 24,
+      "60": 8
+    }
+  },
+  "q7b": {
+    "median": 50.0,
+    "mean": 50.8,
+    "n_numeric": 90,
+    "n_non_numeric": 16,
+    "pct_non_numeric": 15.1,
+    "counts": {
+      "30": 10,
+      "40": 15,
+      "50": 35,
+      "60": 18,
+      "70": 12
+    }
+  },
+  "q8": {
+    "mode_seconds": 10,
+    "median_seconds": 10.0,
+    "counts": {
+      "5": 10,
+      "10": 35,
+      "30": 24,
+      "60": 15
+    },
+    "pct_frequency_matters_more": 17.0
+  },
+  "q10": {
+    "Would Use System": 3.68,
+    "CV Can Reliably Detect Attention": 2.86,
+    "Trust Output for Attendance": 3.06,
+    "Should Allow Override": 4.32,
+    "Students Should Be Informed": 4.34,
+    "Must Be Piloted First": 4.5,
+    "Would Improve Teaching Quality": 3.67,
+    "Concerned About Privacy": 4.19
+  },
+  "q11": {
+    "recommend_then_instructor_confirms_pct": 43.4,
+    "fully_automated_pct": 5.7,
+    "soft_alert_pct": 26.4
+  },
+  "q4c": {
+    "All signals should contribute equally to the attention score": 23,
+    "Duration of distraction should matter more \u2014 brief glances away are normal": 20,
+    "The instructor should be able to set weights manually per session": 19,
+    "Head pose and gaze should matter more \u2014 they are the clearest indicators": 18,
+    "Facial expression should matter more \u2014 it reveals cognitive state, not just direction": 17,
+    "Frequency of distraction should matter more \u2014 repeated breaks show a pattern": 9
+  },
+  "q9b": {
+    "All time windows should be weighted equally regardless of when they occur": 25,
+    "The system should flag when attention drops below threshold for more than 10 consecutive minutes": 19,
+    "Attention at the START of the lecture matters most \u2014 sets the tone for understanding": 17,
+    "Sustained low attention across the full session matters more than any single period": 15,
+    "The MIDDLE of the lecture (minutes 15\u201335) matters most \u2014 core content is covered then": 15,
+    "Attention at the END of the lecture matters most \u2014 summaries and conclusions are critical": 15
+  },
+  "derived_weights": {
+    "head_pose": 0.1899,
+    "gaze": 0.1532,
+    "expression": 0.1644,
+    "blink": 0.113,
+    "mouth": 0.1385,
+    "nodding": 0.0913,
+    "phone": 0.1497
+  },
+  "derived_weights_note": "Share of respondents choosing each cue in their top picks (Q4b), normalised over the cues this system implements. Body posture, duration and frequency are not separate cues here (duration/frequency are handled by the windowing logic)."
+}

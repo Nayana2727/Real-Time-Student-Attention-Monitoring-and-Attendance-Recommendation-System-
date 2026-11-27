@@ -1,0 +1,78 @@
+{
+  "source": "github",
+  "n_train": 9633,
+  "n_val": 1743,
+  "n_test": 1809,
+  "classes": [
+    "engaged",
+    "neutral",
+    "negative"
+  ],
+  "test_class_counts": {
+    "engaged": 767,
+    "neutral": 919,
+    "negative": 123
+  },
+  "accuracy": 0.7855,
+  "balanced_accuracy": 0.6418,
+  "macro_f1": 0.6496,
+  "majority_class_baseline_accuracy": 0.508,
+  "chance_balanced_accuracy": 0.3333,
+  "per_class": {
+    "engaged": {
+      "precision": 0.856093979441997,
+      "recall": 0.7601043024771839,
+      "f1-score": 0.8052486187845304,
+      "support": 767.0
+    },
+    "neutral": {
+      "precision": 0.7824390243902439,
+      "recall": 0.8726877040261154,
+      "f1-score": 0.8251028806584362,
+      "support": 919.0
+    },
+    "negative": {
+      "precision": 0.34951456310679613,
+      "recall": 0.2926829268292683,
+      "f1-score": 0.3185840707964602,
+      "support": 123.0
+    },
+    "accuracy": 0.7855168601437258,
+    "macro avg": {
+      "precision": 0.6626825223130124,
+      "recall": 0.6418249777775226,
+      "f1-score": 0.6496451900798089,
+      "support": 1809.0
+    },
+    "weighted avg": {
+      "precision": 0.7842320823155235,
+      "recall": 0.7855168601437258,
+      "f1-score": 0.7822449301496972,
+      "support": 1809.0
+    }
+  },
+  "epochs_run": 20,
+  "confusion_matrix": [
+    [
+      583,
+      168,
+      16
+    ],
+    [
+      66,
+      802,
+      51
+    ],
+    [
+      32,
+      55,
+      36
+    ]
+  ],
+  "tflite_check": {
+    "samples": 300,
+    "same_prediction_pct": 100.0,
+    "max_probability_difference": 1e-06,
+    "size_kb": 760.5
+  }
+}

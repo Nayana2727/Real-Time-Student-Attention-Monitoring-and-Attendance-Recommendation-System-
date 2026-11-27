@@ -1,0 +1,9 @@
+{
+  "_help": "Fill these four numbers yourself, OR run the demo with --use-survey-thresholds to load the faculty-survey values on purpose.",
+  "cue_attentive_cutoff": null,
+  "min_attentive_pct": null,
+  "absent_score_cutoff": null,
+  "min_inattentive_seconds": null,
+  "min_visible_pct": 50,
+  "require_instructor_confirmation": true
+}
